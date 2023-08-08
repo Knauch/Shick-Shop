@@ -1,4 +1,5 @@
-simple componment be like -
+import './category-item.styles.scss'
+
 
 const CategoryItem = ({category})=> {
 
@@ -20,14 +21,3 @@ const CategoryItem = ({category})=> {
 }
 
 export default CategoryItem
-
-end usage of the component be like - 
-
-return (
-    <div className='categories-container'>
-      {categories.map(({ category }) => (
-       <CategoryItem key={category.id} category={category} />
-      ))}
-    </div>
-  );
-}
