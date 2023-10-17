@@ -31,3 +31,19 @@ return (
     </div>
   );
 }
+
+Steps
+
+1. making components for the categories etc.
+2. Implementing BrouserRouter for routing on navigation bar
+  - Creating Routes forlder where will be all our components pages like Home, SHop, CheckOut etc.
+  - each component will be inside <Route path='/' element={<Home />}/>
+  - NAvbar should be the topest component parent and other should be with 'index' prop 
+  <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  
+3. Separete Navigation component - navigation bar with divs and LINK to go to
+   
